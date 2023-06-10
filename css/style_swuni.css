@@ -1,0 +1,10 @@
+/* font 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body {
+    font-family: 'Jua';
+}
+
+/* hover */
+.card-hover:hover {
+    background-color:rgb(255, 228, 228);
+}

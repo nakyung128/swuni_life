@@ -1,0 +1,190 @@
+<!-- 학교 이용 정보 안내 페이지 구현 -->
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>학교 이용정보.zip</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style_swuni.css">
+  </head>
+  <body>
+    <!-- 네비게이션 영역 -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(215, 164, 167);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html" style="color: rgb(167, 15, 15);">
+                <img src="images/logo.png" alt="Logo" width="30" height="26" class="d-inline-block align-text-top">
+                슬기로운 슈니생활
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="main.html">홈</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="tips.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          꿀팁.zip
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tips.html#words">서울여대 단어사전</a></li>
+                          <li><a class="dropdown-item" href="tips.html#print">프린트 하는 곳</a></li>
+                          <li><a class="dropdown-item" href="tips.html#bus">스쿨버스 시간표</a></li>
+                          <li><a class="dropdown-item" href="tips.html#number">전화번호 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sites.html">유용한 사이트.zip</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="information.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          학교 이용정보.zip
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="information.html#site">대학생활 필수 사이트</a></li>
+                          <li><a class="dropdown-item" href="information.html#information">이용 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 헤더 -->
+    <header class="text-center py-5">
+        <h2 class="fw-bold py-5">🏫 학교 이용정보 안내</h2>
+        <p class="lead text-muted">학교생활을 더 편리하게 하고 싶다면? 원하는 정보는 모두 여기에서!<br>✨ 대학 생활 필수 사이트 & 이용 시간 안내 ✨</p>
+        <a href="#site"> <button type="button" class="mt-4 btn btn-outline-primary rounded-pill fw-normal mx-2">필수 사이트 보기</button></a>
+        <a href="#information"><button type="button" class="mt-4 btn btn-outline-info rounded-pill fw-normal">이용 시간 안내 보기</button></a>
+    </header>
+
+    <!--학교 이용정보 안내 영역시작-->
+    <section class = "container overflow-hidden text-center py-5" id="site">
+            <div class="mt-5 row py-5 gy-3">
+                <h4>📍 대학 생활 필수 사이트</h4>
+                <hr>
+                <div class="card-1 col-md-4">
+                    <div class="shadow p-4 mb-4 border-bottom border-4 border-danger">
+                        <img src="images/서울여대.jpg" alt="서울여대" width="150" class="rounded-circle"></a>
+                        <h3 class="fw-bold fs-5 py-2">서울여대</h3>
+                        <hr>
+                        <p class="text-muted">학사, 장학, 행사, 채용, 취업, 일반, 봉사 관련<br> 공지사항 및 대부분의 정보 확인이 가능한 사이트</p>
+                        <a href="https://www.swu.ac.kr/index.do" class="btn btn-danger">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="card-2 col-md-4">
+                    <div class="shadow p-4 border-bottom border-4 border-warning">
+                        <img src="images/e-class.png" alt="e-class" width="150" class="rounded-circle"></a>
+                        <h3 class="fw-bold fs-5 py-2">e-class</h3>
+                        <hr>
+                        <p class="text-muted">강의자료, 출석체크, 과제 제출, 쪽지 이용 등이<br> 가능한 필수 이용 사이트</p>
+                        <a href="https://cyber.swu.ac.kr/ilos/main/main_form.acl" class="btn btn-warning">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="card-3 col-md-4">
+                    <div class="shadow p-4 border-bottom border-4 border-info">
+                        <img src="images/everytime.png" alt="everytime" width="150" class="rounded-circle"></a>
+                        <h3 class="fw-bold fs-5 py-2">에브리타임</h3>
+                        <hr>
+                        <p class="text-muted">시간표 관리, 다양한 게시판 이용,<br> 정보 검색이 편리한 사이트 </p>
+                        <a href="https://everytime.kr/" class="btn btn-info">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="card-1 col-md-4">
+                    <div class="shadow p-4 border-bottom border-4 border-danger">
+                        <img src="images/종합정보시스템.jpg" alt="종합정보시스템" width="150" class="rounded-circle"></a>
+                        <h3 class="fw-bold fs-5 py-2">종합정보시스템</h3>
+                        <hr>
+                        <p class="text-muted">강의계획서 확인, 수강신청, 성적조회를 하려면<br> 필수로 알아야 하는 사이트</p>
+                        <a href="https://swis.swu.ac.kr/" class="btn btn-danger">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="card-2 col-md-4">
+                    <div class="shadow p-4 border-bottom border-4 border-warning">
+                        <img src="images/서울여대 도서관.png" alt="서울여대 도서관" width="150" class="rounded-circle"></a>
+                        <h3 class="fw-bold fs-5 py-2">서울여대 도서관</h3>
+                        <hr>
+                        <p class="text-muted">여러 도서 자료 검색과 자료 구입 신청,<br> 소프트웨어 이용이 가능한 유용한 사이트</p>
+                        <a href="https://lib.swu.ac.kr/#/" class="btn btn-warning">바로가기</a>
+                    </div>
+                </div>       
+                <div class="card-3 col-md-4">
+                    <div class="shadow p-4 border-bottom border-4 border-info">
+                        <img src="images/학생성장지원시스템.jpg" alt="학생성장지원시스템" width="150" class="rounded-circle"></a>
+                        <h3 class="fw-bold fs-5 py-2">학생성장지원시스템</h3>
+                        <hr>
+                        <p class="text-muted">여러 프로그램에 참여하면서 다양한 경험과 더불어<br> 마일리지까지 쌓을 수 있는 사이트</p>
+                        <a href="https://eport.swu.ac.kr/cs/lo/login_form.acl" class="btn btn-info">바로가기</a>
+                    </div>
+                </div>
+                <div class="justify-content-center py-5 mt-4 m-auto">
+                    <h4 class="mb-3">🔗 관련 인스타그램 계정들</h4>
+                    <a href="https://www.instagram.com/swu.official/" class="btn btn-outline-warning rounded-pill bt-lg px-4 mx-1"><i class="bi bi-instagram"></i> 서울여대</a>
+                    <a href="https://www.instagram.com/swu_eport/" class="btn btn-outline-danger rounded-pill bt-lg px-4 mx-1"><i class="bi bi-instagram"></i> 학생성장시스템</a>            
+                    <a href="https://www.instagram.com/swulib.official/" class="btn btn-outline-primary rounded-pill bt-lg px-4 mx-1"><i class="bi bi-instagram"></i> 도서관</a>
+                    <a href="https://www.instagram.com/swu_studentcouncil53/" class="btn btn-outline-info rounded-pill bt-lg px-4 mx-1"><i class="bi bi-instagram"></i> 총학생회 비상대책위원회</a>            
+                </div> 
+            </div>
+    </section>
+
+    <!-- 이용 시간 안내 영역 시작-->
+    <section class = "container overflow-hidden text-center py-5" id="information">
+        <h4>📍 이용 시간 안내</h4>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">🏥 보건실</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">위치 및 이용 시간</h6>
+                  <p class="card-text">위치: 학생누리관 2층 202호<br>이용 시간: 9:00 - 17:30 (월-금)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">😇 학생상담센터</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">위치 및 이용 시간</h6>
+                  <p class="card-text">위치: 학생누리관 2층 205호<br>이용 시간: 10:00 - 17:00 (월-금)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">📚 도서관 자료실</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">이용 시간</h6>
+                  <p class="card-text">이용 시간: 9:00 - 20:00 (월-금)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">📚 도서관 열람실</h5>
+                  <h6 class="card-subtitle mb-3 text-body-secondary">이용 시간</h6>
+                  <p class="card-text text-start">- 1층 미디어룸, 세미나실: 9:00 - 19:30<br>- 1층 디지털랩: 9:00 - 23:00<br>- 1층 소셜러닝라운지, 멀티플렉스존: 24시간 개방<br>- 1층 멀티미디어라운지, 커뮤니티라운지 / 4층 열람실, 자유열람실 / 5층 열람실, 슈니나래: 8:00 - 23:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--학교 이용정보 안내 영역끝-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
